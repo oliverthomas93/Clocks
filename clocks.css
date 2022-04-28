@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.analog-clock {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    background: url(./5051\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(138, 0, 0);
+    z-index: 1;
+}
+
+.second-hand {
+    height: 12%;
+    width: 1px;
+    background: linear-gradient(rgb(0, 0, 0) 60%, transparent 40%);
+    position: absolute;
+}
+
+.minute-hand {
+    height: 14%;
+    width: 3px;
+    background: linear-gradient(rgb(126, 126, 126) 60%, transparent 40%);
+    position: absolute;
+}
+
+.hour-hand {
+    height: 10%;
+    width: 5px;
+    background: linear-gradient(rgb(68, 68, 68) 60%, transparent 40%);
+    position: absolute;
+}
+
+.digital-clock {
+    padding: 20px;
+}
+
+.cells {
+    display: flex;
+    gap: 10px;
+}
+
+.top, .bottom {
+    width: 20px;
+    height: 20px;
+    border: solid;
+    border-color: black;
+    
+}
+
+.top {
+    border-width: 3px;
+}
+
+.bottom {
+    border-width: 0 3px 3px 3px;
+}
+
+.simple-clock {
+    font-family: 'digital-7';
+    font-size: 60px;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url(./Fonts/digital-7\ \(mono\ italic\).ttf);
+}
